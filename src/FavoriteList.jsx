@@ -5,7 +5,7 @@ function FavoriteList(){
     var {favorite,setFavorite} = useContext(NameArr)
     function addRemove(removeid){
         var temp = favorite.filter(function(item){
-            if(item.id == removeid){
+            if(item.id === removeid){
                 return false
             }
             else{

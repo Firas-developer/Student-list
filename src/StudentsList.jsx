@@ -5,6 +5,7 @@ function StudentsList(){
     var {List,favorite,setFavorite} = useContext(NameArr)
     function addFavorite(favData,event){
         event.currentTarget.disabled = true;
+        event.currentTarget.className = "bg-gray-400 text-white p-1 rounded-md";
         setFavorite([...favorite,{id:favData.id,name:favData.name}])
     }
     return(
